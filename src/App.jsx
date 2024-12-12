@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 import Counter from "./components/Counter";
+import Posts from "./components/Posts";
 import Stats from "./components/Stats";
 import { decrement, increment } from "./features/counters/countersSlice";
 
@@ -34,6 +35,7 @@ function App() {
           />
         ))}
         <Stats totalCount={totalCount} />
+        <Posts />
       </div>
     </div>
   );
